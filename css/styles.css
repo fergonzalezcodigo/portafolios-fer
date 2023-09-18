@@ -3,9 +3,9 @@
     color: white;
   }
   .nav-pills{
-    /* --bs-nav-pills-border-radius: var(--bs-border-radius); */
-    /* --bs-nav-pills-link-active-color: #bd0e0e; */
-    --bs-nav-pills-link-active-bg: #b7e5e5;
+    /* --bs-nav-pills-border-radius: var(--bs-border-radius);
+    --bs-nav-pills-link-active-color: #bd0e0e; */
+    --bs-nav-pills-link-active-bg: #7794c0;
   }
   .nav-link{
     color: #458282;
@@ -53,9 +53,10 @@ nav{
   text-align: center;
 }
 .seccion__foto{
-  width: 100%;
-  height: 100%;
-  padding: 10px;
+
+}
+.seccion__foto img{
+  max-width: 100%;
   border-radius: 20px;
 }
 .seccion__social{
@@ -66,7 +67,10 @@ nav{
 .seccion__icono{
   width: 25px;
 }
-.seccion__perfil p{
+.seccion__nombre__inferior{
+  display: none;
+}
+.seccion__intro{
   margin-top: 5px;
   padding: 10px;
 }
@@ -76,5 +80,75 @@ nav{
   padding-bottom: 10px;
 }
 .boton button{
+  background-color: #c0a4c9;
+  border: none;
   border-radius: 10px;
+  padding: 10px;
+}
+.boton button:hover{
+  background-color: #896a92;
+}
+
+@media (min-width: 768px){
+  body{
+    overflow-y: hidden;
+  }
+}
+@media(min-width: 768px){
+  .icono{
+    width: 30px;
+  }
+}
+@media (min-width: 768px){
+  .seccion__desktop{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 768px){
+  .seccion__nombre__inferior{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+  }
+  .seccion__nombre__inferior h1{
+    font-size: 55px;
+  }
+}
+@media (min-width: 768px){
+  .seccion__nombre__superior{
+    display: none;
+  }
+}
+@media (min-width: 768px){
+  .seccion__foto img{
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+  }
+}
+@media (min-width: 768px){
+  .seccion__social{
+    justify-content: flex-end;
+    gap: 20px;
+    margin: 25px 25px 0px 0px;
+  }
+}
+@media (min-width: 768px){
+  .seccion__icono{
+    width: 35px;
+  }
+}
+@media (min-width: 768px){
+  .seccion__intro{
+    margin: 0px;
+    padding-right: 20px;
+    font-size: 22px;
+  }
+}
+@media(min-width: 768px){
+  .boton{
+    justify-content: flex-start;
+  }
 }
